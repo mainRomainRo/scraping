@@ -11,7 +11,6 @@ tab = [] # creation tableau
                                      
 tab[nombre] = Hash.new(0)                                                       # New Tableau = start 0
   tab[nombre][prix.text] = doc.css('a.price')[nombre].text                      # a.price => code source pour les links
-  end
    sleep 0.5                                                                    # Temps d'affichage
   puts tab[nombre]                                                              # Affiche le tableau qui regroupe l'ensemble
 end
